@@ -1,0 +1,123 @@
+:root {
+    --color-principal: #4E0D6B;
+    --color-fondo: #E3DBC8;
+    --borde-redondo: 10px;
+    --sombra: 0 8px 1px rgba(0, 0, 0, 0.1);
+    --color-links: #3400FA;
+    --color-linkspost: #28147D;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color:indigo;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    color:indigo;
+}
+
+p { color:black; 
+   font-size: 1rem; 
+   font-family:'Times New Roman', Times, serif;
+}
+
+ul, ol {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.texto-destacado{
+    color:deeppink;
+    font-style:oblique;
+}
+
+img {
+    display: block;
+    border-radius: 50%;
+    border: 3px solid var(--color-principal);
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main section {
+    background-color: var(--color-fondo);
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: var(--borde-redondo);
+    box-shadow: var(--sombra);
+    flex: 1 1 300px;
+}
+
+body {
+    background-color: rgb(231, 194, 229);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 10px;
+    border-radius: var(--borde-redondo);
+    box-shadow: var(--sombra);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-links);
+}
+
+nav a:hover {
+    color: var(--color-linkspost);
+    text-decoration: underline;
+}
+
+nav a:visited {
+    color: #7f8c8d;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--color-fondo);
+    border-radius: var(--borde-redondo);
+}
+
+button {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 5px;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main section {
+        flex: 1 1 300px;
+    }
+}
