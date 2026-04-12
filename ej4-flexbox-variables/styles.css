@@ -20,11 +20,20 @@ h1 {
 
 h2, h3 {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-p { color:saddlebrown; 
+h3 {
+    color:indigo;
+}
+
+p { color:black; 
    font-size: 1rem; 
-   font-family: Arial, Helvetica, sans-serif;
+   font-family:'Times New Roman', Times, serif;
+}
+
+ul, ol {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .texto-destacado{
@@ -78,3 +87,4 @@ nav a:hover {
 nav a:visited {
     color: #7f8c8d;
 }
+
