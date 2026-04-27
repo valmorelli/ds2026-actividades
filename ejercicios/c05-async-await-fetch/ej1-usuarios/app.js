@@ -1,5 +1,4 @@
-"use strict";
-async function obtenerUsuarios() {
+export async function obtenerUsuarios() {
     try {
         console.log('Obteniendo usuarios...');
         const response = await fetch('https://jsonplaceholder.typicode.com/users');
