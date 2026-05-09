@@ -10,7 +10,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Catalogo de Libros</h1>
 
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" id="buscar" class="form-control form-control-lg" placeholder="Nombre del libro...">
+                    <button id="boton" class="btn btn-primary btn-lg">Buscar libro</button>
+                </div>
+                <p id="cargar" class="text-info mt-2" style="display: none;">Buscando libros...</p>
+                <div id="errorBusqueda" class="alert alert-danger mt-3" style="display: none;"></div>
+            </div>
+        </div>
+
+        <div id="resultados" class="row"></div>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <script src="js/data.js"></script>
