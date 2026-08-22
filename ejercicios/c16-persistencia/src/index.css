@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Playfair+Display:ital,wght=0,400;0,700;1,400&display=swap');
+
+:root {
+  --text-primary: #5c4a52;
+  --text-heading: #402e36;
+  --bg-romantic: #fff9fa;
+  --romantic-pink: #f4afab;
+  --romantic-pink-hover: #f19590;
+  --romantic-dark-pink: #840869;
+  --soft-shadow: rgba(224, 182, 185, 0.15) 0px 8px 24px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-romantic);
+  color: var(--text-primary);
+  font-family: 'Libre Caslon Display', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.brand-regality {
+  font-family: 'Regality', 'Playfair Display', serif !important;
+  font-size: 2.5rem !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  letter-spacing: 1px;
+}
+
+.titulo-libro-yrguma {
+  font-family: 'Yrguma', 'Playfair Display', serif !important;
+  font-weight: 700 !important;
+  color: var(--text-heading) !important;
+}
+
+.titulo-catalogo-default {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--text-heading) !important;
+}
+
+.card, .btn {
+  transition: all 0.3s ease-in-out !important;
+}
