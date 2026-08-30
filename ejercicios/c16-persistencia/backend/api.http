@@ -3,7 +3,7 @@
 ### LIBROS
 
 ### 1. Listar todos los libros (200)
-G ET {{baseUrl}}/api/libros
+GET {{baseUrl}}/api/libros
 
 ### 2. Filtrar libros disponibles (200)
 GET {{baseUrl}}/api/libros?disponible=true

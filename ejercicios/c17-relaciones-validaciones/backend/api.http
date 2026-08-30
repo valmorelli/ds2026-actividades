@@ -1,0 +1,78 @@
+@baseUrl = http://localhost:3000
+
+### CASOS DE EXITO (200 / 201 / 204)
+
+### Listar todos los libros con autor (200)
+GET {{baseUrl}}/api/libros
+
+### Listar libros disponibles (200)
+GET {{baseUrl}}/api/libros?disponible=true
+
+### Ver detalle de un libro con autor y categorias (200)
+GET {{baseUrl}}/api/libros/1
+
+### Listar autores (200)
+GET {{baseUrl}}/api/autores
+
+### Crear un libro valido (201)
+POST {{baseUrl}}/api/libros
+Content-Type: application/json
+
+{
+  "titulo": "Inferno",
+  "autorId": 1,
+  "precio": 19000,
+  "imagen": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1360157077i/17212231.jpg",
+  "disponible": true
+}
+
+### -----------------------------------
+### CASOS DE ERROR (400 / 404 / 409)
+
+
+### 1. Error 400: POST libro sin titulo
+POST {{baseUrl}}/api/libros
+Content-Type: application/json
+
+{
+  "autorId": 1,
+  "precio": 5000,
+  "imagen": "https://img.jpg"
+}
+
+### 2. Error 400: GET id no numerico (abc)
+GET {{baseUrl}}/api/libros/abc
+
+### 3. Error 404: GET libro inexistente
+GET {{baseUrl}}/api/libros/9999
+
+### 4. Error 404: PUT actualizar libro inexistente
+PUT {{baseUrl}}/api/libros/9999
+Content-Type: application/json
+
+{
+  "precio": 25000
+}
+
+### 5. Error 409: POST autor duplicado (@unique)
+POST {{baseUrl}}/api/autores
+Content-Type: application/json
+
+{
+  "nombre": "Dan Brown",
+  "nacionalidad": "Estadounidense"
+}
+
+### 6. Error 409: POST libro con autorId inexistente (FK)
+POST {{baseUrl}}/api/libros
+Content-Type: application/json
+
+{
+  "titulo": "Libro Huerfano",
+  "autorId": 9999,
+  "precio": 10000,
+  "imagen": "https://img.jpg"
+}
+
+### 7. Error 409: DELETE autor que tiene libros (onDelete: Restrict)
+DELETE {{baseUrl}}/api/autores/1
