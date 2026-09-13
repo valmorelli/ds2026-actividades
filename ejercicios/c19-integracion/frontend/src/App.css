@@ -1,0 +1,72 @@
+.navbar-girly {
+  background-color: #840869 !important; 
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.navbar-girly .navbar-toggler-btn {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.sidebar-girly {
+  background-color: var(--bg-romantic) !important;
+  width: 280px !important;
+}
+
+.sidebar-girly .offcanvas-header {
+  border-bottom: 1px solid rgba(132, 8, 105, 0.1);
+}
+
+.sidebar-link {
+  color: var(--text-primary) !important;
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 12px 20px !important;
+  border-radius: 12px;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebar-link:hover {
+  background-color: var(--romantic-pink) !important;
+  color: #ffffff !important;
+}
+
+.btn-sidebar-add {
+  background-color: #840869 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-align: center;
+  margin-top: 15px;
+  border-radius: 12px;
+  padding: 12px 20px !important;
+  border: none !important;
+}
+
+.btn-sidebar-add:hover {
+  background-color: #63054f !important;
+}
+
+.card-girly {
+  border: none !important;
+  border-radius: 20px !important;
+  background-color: #ffffff !important;
+  box-shadow: var(--soft-shadow) !important;
+}
+
+.btn-girly-primary {
+  background-color: var(--romantic-pink) !important;
+  border: none !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  border-radius: 12px !important;
+}
+
+.btn-girly-primary:hover {
+  background-color: var(--romantic-pink-hover) !important;
+}
+
+.footer-girly {
+  background-color: #840869 !important;
+  border-top: 2px solid rgba(255, 255, 255, 0.15) !important;
+}
