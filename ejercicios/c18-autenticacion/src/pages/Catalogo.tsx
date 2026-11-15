@@ -5,7 +5,7 @@ import { useFetch } from '../hooks/useFetch';
 import type { Libro } from '../types/libro';
 
 export function Catalogo() {
-  const { data: libros, loading, error } = useFetch<Libro[]>('/libros.json');
+  const { data: libros, loading, error } = useFetch<Libro[]>('/libros');
 
   return (
     <>
